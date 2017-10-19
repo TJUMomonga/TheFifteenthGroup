@@ -265,7 +265,7 @@ public class CANTool {
 		}
 		else
 		{
-			returnTheInfo(0,"");
+			returnTheInfo(0,""); 
 		}
 		
 	}
