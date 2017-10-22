@@ -98,7 +98,7 @@ public class CANTool {
 		String lenString = command.substring(4, 5);//长度byte,2个16进制，8bit
 		int id = Integer.parseInt(idString, 16);
 		int len = Integer.parseInt(lenString, 16);
-		if(len<=0||len>8||templen!=9+len*2)//最长64bit
+		if(len<=0||len>8||templen!=9+len*2)//最长64bit，9=TYPE1+ID3+DLC1+TIME4
 		{
 			returnTheInfo(0,"");
 			return;
