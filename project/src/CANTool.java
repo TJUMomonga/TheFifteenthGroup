@@ -3,6 +3,7 @@ import serialException.SerialPortOutputStreamCloseFailure;
 import serialException.TooManyListeners;
 import serialPort.SerialTool;
 import gnu.io.SerialPort;
+import gnu.io.SerialPortEventListener;
 
 
 public class CANTool {
@@ -20,7 +21,7 @@ public class CANTool {
 	public void addListener(SerialListener listener)
 	{
 		try {
-			SerialTool.addListener(serialPort, listener);
+			SerialTool.addListener(serialPort, (SerialPortEventListener) listener);
 		} catch (TooManyListeners e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
