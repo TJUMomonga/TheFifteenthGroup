@@ -114,7 +114,7 @@ public class CANTool {
 			data_2 = data_2 + Integer.toBinaryString(Integer.parseInt(data_16.substring(i,i+1), 16));
 		}
 		int time = Integer.parseInt(timeString, 16);
-		if(CheckFormat.check(id,Long.parseLong(data_16,16)))//checkformat
+		if(CheckFormat.check(id,Long.parseUnsignedLong(data_16,16)))//checkformat
 		{
 			returnTheInfo(1,"");
 			if(time == 0)//代表发送一次
@@ -186,7 +186,7 @@ public class CANTool {
 			data_2 = data_2 + Integer.toBinaryString(Integer.parseInt(data_16.substring(i,i+1), 16));
 		}
 		int time = Integer.parseInt(timeString, 16);
-		if(CheckFormat.check(id,Long.parseLong(data_16,16)))
+		if(CheckFormat.check(id,Long.parseUnsignedLong(data_16,16)))
 		{
 			returnTheInfo(1,"");
 			if(time == 0)
