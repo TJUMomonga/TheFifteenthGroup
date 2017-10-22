@@ -1,3 +1,5 @@
+import serialException.SendDataToSerialPortFailure;
+import serialException.SerialPortOutputStreamCloseFailure;
 import serialException.TooManyListeners;
 import serialPort.SerialTool;
 import gnu.io.SerialPort;
@@ -214,7 +216,7 @@ public class CANTool {
 	
 	public void changeSpeed(char c) 
 	{
-		if(state == 0)
+		if(state == 0)//关机的时候才能修改速率
 		{
 			int level = (int)(c-'0');
 			if(level<0 || level >8)//S0-S8 3
@@ -234,5 +236,55 @@ public class CANTool {
 		}
 		
 	}
+	
+	public void close() //改变state为0
+	{
+		if(state == 1)
+		{
+			state = 0;
+			returnTheInfo(1,"");
+		}
+		else
+		{
+			returnTheInfo(0,"");
+		}
+	}
+	
+	public void open()  //改变state为1
+	{
+		if(state == 0)
+		{
+			state = 1;
+			returnTheInfo(1,"");
+		}
+		else
+		{
+			returnTheInfo(0,"");
+		}
+		
+	}
+	
+	public void returnTheInfo(int flag,String message)
+	{
+		if(flag==1)
+		{
+			message = message + "\r";
+		}
+		else
+		{
+			message = message + (char)(0x07);
+		}
+		try {
+			SerialTool.sendToPort(serialPort, message.getBytes());
+		} catch (SendDataToSerialPortFailure
+				| SerialPortOutputStreamCloseFailure e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+
+	
 	
 }
