@@ -15,5 +15,4 @@ public class Main {
 		SerialListener listener = new SerialListener(serialPort,tool);
 		tool.addListener(listener);
 	}
-	
 }
