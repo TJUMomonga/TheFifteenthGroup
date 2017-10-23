@@ -14,6 +14,5 @@ public class Main {
 		CANTool tool = new CANTool(serialPort);
 		SerialListener listener = new SerialListener(serialPort,tool);
 		tool.addListener(listener);
-		
 	}
 }
