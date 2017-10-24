@@ -8,11 +8,14 @@ int main(){
     ifstream fin("data.in");
     ofstream fout("data.txt");
     
-    string mes;
+    string canm;
     int num = 1;
     
-    while(getline(fin,mes)){
-    	string a = mes.substr(0,3);
+    while(getline(fin,canm)){
+    	string mes = canm.substr(0,3);
+    	if(mes == "BO_"){
+    		
+		}
 	}
     
     return 0;
