@@ -16,6 +16,9 @@ void zerosort(int * tar ,string x, int be,int le); //0+排序
 int main(){
     ifstream fin("data.in");
     ofstream fout("data.txt");
+    ofstream foutphy("dataphy.txt");
+    ofstream foutnr("datanr.txt");
+    ofstream foutr("datar.txt");
     
     string canm; //输入文档 
     
@@ -48,6 +51,7 @@ int main(){
 			len_t = canm[col+2] - '0';//得到data长度 
 			
 			fout << canm << endl;
+			foutphy << canm << endl;
 		}
 		
 		if(canm.substr(0,1) != ""){
@@ -143,7 +147,7 @@ int main(){
 			c = atof(canm.substr(zuof+1,colf-zuof-1).data());
 			d = atof(canm.substr(colf+1,yuof-colf-1).data());
 			
-			int mid = (d-c) / 2 + 1; //正确值(取中间)
+			int mid = (d+c) / 2 + 1; //正确值(取中间)
 			int low = c - 1;//低边界值 
 			int high = d + 1;//高边界值
 			
@@ -163,9 +167,14 @@ int main(){
 				}
 				fout << canm << endl;
 				fout << "phy:" << mid << endl;
+				foutphy << canm << endl;
+				foutphy << mid << endl; 
 				fout <<'t'<< chan10_16(id_10) 
 					<< len_t <<chan2_16(can_2,len_t) << endl << endl;
-					
+				foutnr <<'t'<< chan10_16(id_10)
+					<< len_t <<chan2_16(can_2,len_t) << "\\r\\n" << endl << endl;
+				foutr <<'t'<< chan10_16(id_10)
+					<< len_t <<chan2_16(can_2,len_t) << "\\r" << endl << endl;	
 				//错误输出
 				//1.越下界
 				int xlow = (c-b)/a;
@@ -200,6 +209,7 @@ int main(){
 			
 			if(ord == 0){
 				string xm_2 = chan10_2(xm,1,le);
+				cout << xm << ' ' << xm_2 << endl; 
 				int can_2[64];
 				for(int i = 0; i < 64; i++)
 					can_2[i] = 0;
@@ -213,10 +223,14 @@ int main(){
 				
 				fout << canm << endl;
 				fout << "phy:" << mid << endl;
+				foutphy << canm << endl;
+				foutphy << mid << endl; 
 				fout <<'t'<< chan10_16(id_10) 
 					<< len_t <<chan2_16(can_2,len_t) << endl << endl;
-					
-					
+				foutnr <<'t'<< chan10_16(id_10)
+					<< len_t <<chan2_16(can_2,len_t) << "\\r\\n" << endl << endl;	
+				foutr <<'t'<< chan10_16(id_10)
+					<< len_t <<chan2_16(can_2,len_t) << "\\r" << endl << endl;	
 				//错误输出
 				//1.越下界
 				int xlow = (c-b)/a;
@@ -253,11 +267,6 @@ string chan10_2(int num,int ord,int le){
 	}
 	if(s=="")
 		s=s+'0';
-	if(s.length()<le){
-		for(int i = le - s.length(); i > 0; i--){
-			s='0'+s;
-		}
-	}
 	return s;  
 }
 
@@ -328,6 +337,7 @@ void zerosort(int * tar,string x, int be,int le){
 	//第一行 
 	for(int i = 0; i < first_len; i++){
 		tar[be-i] = x[le - i - 1] - '0';
+		if(tar[be-i] < 0) tar[be-i] = 0;
 		guid--;
 	}
 	
