@@ -1,252 +1,862 @@
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97
-98
-99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
-130
-131
-132
-133
-134
-135
-136
-137
-138
-139
-140
-141
-142
-143
-144
-145
-146
-147
-148
-149
-150
-151
-152
-153
-154
-155
-156
-157
-158
-159
-160
-161
-162
-163
-164
-165
-166
-167
-168
-169
-170
-171
-172
-173
-174
-175
-176
-177
-178
-179
-180
-181
-182
-183
-184
-185
-186
-187
-188
-189
-190
-191
-192
-193
-194
-195
-196
-197
-198
-199
-200
-201
-202
-203
-204
-205
-206
-207
-208
-209
-210
-211
-212
-213
-214
-215
-216
-217
-218
-219
-220
-221
-222
-223
-224
-225
-226
-227
-228
-229
-230
-231
-232
-233
-234
-235
-236
-237
-238
-239
-240
-241
-242
-243
-244
-245
-246
-247
-248
-249
-250
-251
-252
+BO_ 856 CDU_1: 8 CDU
+ SG_ CDU_HVACOffButtonSt : 0|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t35880100000000000000
+
+ SG_ CDU_HVACOffButtonStVD : 1|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t35880200000000000000
+
+ SG_ CDU_HVACAutoModeButtonSt : 2|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t35880400000000000000
+
+ SG_ CDU_HVACAutoModeButtonStVD : 3|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t35880800000000000000
+
+ SG_ CDU_HVACFDefrostButtonSt : 6|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t35884000000000000000
+
+ SG_ CDU_HVACFDefrostButtonStVD : 7|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t35888000000000000000
+
+ SG_ CDU_HVACDualButtonSt : 10|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t35880004000000000000
+
+ SG_ CDU_HVACDualButtonStVD : 11|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t35880008000000000000
+
+ SG_ CDU_HVACIonButtonSt : 12|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t35880010000000000000
+
+ SG_ CDU_HVACIonButtonStVD : 13|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t35880020000000000000
+
+ SG_ CDU_HVACCirculationButtonSt : 18|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t35880000040000000000
+
+ SG_ CDU_HVACCirculationButtonStVD : 19|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t35880000080000000000
+
+ SG_ CDU_HVACACButtonSt : 20|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t35880000100000000000
+
+ SG_ CDU_HVACACButtonStVD : 21|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t35880000200000000000
+
+ SG_ CDU_HVACACMaxButtonSt : 22|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t35880000400000000000
+
+ SG_ CDU_HVACACMaxButtonStVD : 23|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t35880000800000000000
+
+ SG_ CDU_HVACModeButtonSt : 26|3@0+ (1,0) [0|7] ""  HVAC
+phy:4
+t35880000000400000000
+
+ SG_ HVAC_WindExitSpd : 30|4@0+ (1,0) [0|15] ""   Vector__XXX
+phy:8
+t35880000004000000000
+
+ SG_ CDU_HVAC_DriverTempSelect : 36|5@0+ (0.5,18) [18|32] "°C"   Vector__XXX
+phy:8
+t35880000000009000000
+
+ SG_ HVAC_PsnTempSelect : 44|5@0+ (0.5,18) [18|32] ""   Vector__XXX
+phy:8
+t35880000000000090000
+
+ SG_ CDU_HVACCtrlModeSt : 54|3@0+ (1,0) [0|7] ""  HVAC
+phy:4
+t35880000000000004000
+
+ SG_ CDU_ControlSt : 55|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t35880000000000008000
+
+BO_ 61 CDU_4: 8 CDU
+ SG_ CDU_HVACACCfg : 1|2@0+ (1,0) [0|3] ""  HVAC
+phy:2
+t3D80200000000000000
+
+ SG_ CDU_HVACAirCirCfg : 3|2@0+ (1,0) [0|3] ""  HVAC
+phy:2
+t3D80800000000000000
+
+ SG_ CDU_HVACComfortCfg : 5|2@0+ (1,0) [0|3] ""  HVAC
+phy:2
+t3D82000000000000000
+
+BO_ 1067 CDU_NM: 8 CDU
+ SG_ CDU_NMDestAddress : 7|8@0+ (1,0) [0|255] ""  BCM,PEPS,ICM,CDU
+phy:128
+t42B88000000000000000
+
+ SG_ CDU_NMAlive : 8|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+phy:1
+t42B80001000000000000
+
+ SG_ CDU_NMRing : 9|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+phy:1
+t42B80002000000000000
+
+ SG_ CDU_NMLimpHome : 10|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+phy:1
+t42B80004000000000000
+
+ SG_ CDU_NMSleepInd : 12|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+phy:1
+t42B80010000000000000
+
+ SG_ CDU_NMSleepAck : 13|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+phy:1
+t42B80020000000000000
+
+ SG_ CDU_NMWakeupOrignin : 23|8@0+ (1,0) [0|255] ""  BCM,PEPS,ICM,CDU
+phy:128
+t42B80000800000000000
+
+ SG_ CDU_NMDataField : 31|40@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+phy:1
+t42B80000008000000000
+
+BO_ 1056 BCM_NM: 8 BCM
+ SG_ BCM_NMDestAddress : 7|8@0+ (1,0) [0|255] ""  BCM,PEPS,ICM,CDU
+phy:128
+t42088000000000000000
+
+ SG_ BCM_NMAlive : 8|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+phy:1
+t42080001000000000000
+
+ SG_ BCM_NMRing : 9|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+phy:1
+t42080002000000000000
+
+ SG_ BCM_NMLimpHome : 10|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+phy:1
+t42080004000000000000
+
+ SG_ BCM_NMSleepInd : 12|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+phy:1
+t42080010000000000000
+
+ SG_ BCM_NMSleepAck : 13|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+phy:1
+t42080020000000000000
+
+ SG_ BCM_NMWakeupOrignin : 23|8@0+ (1,0) [0|255] ""  BCM,PEPS,ICM,CDU
+phy:128
+t42080000800000000000
+
+ SG_ BCM_NMDataField : 31|40@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,CDU
+phy:1
+t42080000008000000000
+
+BO_ 792 BCM_BCAN_1: 8 BCM
+ SG_ BCM_KeySt : 1|2@0+ (1,0) [1|3] ""  PEPS,ICM,AVM,CDU,HVAC
+phy:2
+t31880200000000000000
+
+越下界测试:
+t31880000000000000000
+
+BO_ 837 BCM_ESC_2: 8 BCM
+ SG_ ESC_VehSpdVD : 37|1@0+ (1,0) [0|1] ""  BCM,PEPS,ICM,AVM,CDU
+phy:1
+t34580000000020000000
+
+ SG_ ESC_VehSpd : 36|13@0+ (0.05625,0) [0|240] ""  BCM,PEPS,ICM,AVM,CDU
+phy:121
+t34580000000010CE0000
+
+BO_ 915 BCM_VCU_2: 8 BCM
+ SG_ VCU_CompressorPwrLimit : 21|6@0+ (100,0) [0|6000] "w"  HVAC
+phy:3001
+t393800003C0000000000
+
+ SG_ VCU_CompressorPwrLimitAct : 32|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t39380000000001000000
+
+ SG_ VCU_PTCPwrLimit : 29|6@0+ (100,0) [0|6000] "w"  HVAC
+phy:3001
+t39380000003C00000000
+
+ SG_ VCU_PTCrPwrLimitAct : 33|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t39380000000002000000
+
+ SG_ VCU_AirCompressorReq : 36|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t39380000000010000000
+
+ SG_ VCU_AirCompressorReqVD : 37|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t39380000000020000000
+
+BO_ 800 HVAC_1: 8 HVAC
+ SG_ HVAC_AirCompressorSt : 2|3@0+ (1,0) [0|1] ""  CDU
+phy:1
+t32080400000000000000
+
+ SG_ HVAC_CorrectedExterTempVD : 3|1@0+ (1,0) [0|1] ""  BCM,CDU
+phy:1
+t32080800000000000000
+
+ SG_ HVAC_RawExterTempVD : 4|1@0+ (1,0) [0|1] ""  CDU
+phy:1
+t32081000000000000000
+
+ SG_ HVAC_EngIdleStopProhibitReq : 5|1@0+ (1,0) [0|1] ""  CDU
+phy:1
+t32082000000000000000
+
+ SG_ HVAC_ACSt : 6|1@0+ (1,0) [0|1] ""  CDU
+phy:1
+t32084000000000000000
+
+ SG_ HVAC_ACmaxSt : 7|1@0+ (1,0) [0|1] ""  CDU
+phy:1
+t32088000000000000000
+
+ SG_ HVAC_CorrectedExterTemp : 15|8@0+ (0.5,-40) [-40|87.5] "°C"  BCM,CDU
+phy:64
+t320800D0000000000000
+
+ SG_ HVAC_RawExterTemp : 23|8@0+ (0.5,-40) [-40|87.5] "°C"  CDU
+phy:64
+t32080000D00000000000
+
+ SG_ HVAC_TempSelect : 28|5@0+ (0.5,18) [18|32] "°C"  CDU
+phy:8
+t32080000000900000000
+
+ SG_ HVAC_DualSt : 29|1@0+ (1,0) [0|1] ""  CDU
+phy:1
+t32080000002000000000
+
+ SG_ HVAC_AutoSt : 30|1@0+ (1,0) [0|1] ""  CDU
+phy:1
+t32080000004000000000
+
+ SG_ HVAC_Type : 31|1@0+ (1,0) [0|1] ""  CDU
+phy:1
+t32080000008000000000
+
+ SG_ HVAC_WindExitMode : 34|3@0+ (1,0) [0|7] ""  CDU
+phy:4
+t32080000000004000000
+
+ SG_ HVAC_SpdFanReq : 36|2@0+ (1,0) [0|1] ""  CDU
+phy:1
+t32080000000010000000
+
+ SG_ HVAC_TelematicsSt : 42|3@0+ (1,0) [0|7] ""  CDU
+phy:4
+t32080000000000040000
+
+ SG_ HVAC_AirCirculationSt : 46|2@0+ (1,0) [0|3] ""  CDU
+phy:2
+t32080000000000400000
+
+ SG_ HVAC_PopUpDisplayReq : 47|1@0+ (1,0) [0|1] ""  CDU
+phy:1
+t32080000000000800000
+
+ SG_ HVAC_DriverTempSelect : 53|5@0+ (0.5,18) [18|32] "°C"  CDU
+phy:8
+t32080000000000001200
+
+ SG_ HVAC_IonMode : 55|2@0+ (1,0) [0|3] ""  CDU
+phy:2
+t32080000000000008000
+
+ SG_ HVAC_WindExitSpd : 59|4@0+ (1,0) [0|15] ""  CDU
+phy:8
+t32080000000000000008
+
+ SG_ HVAC_PsnTempSelect : 48|5@0+ (0.5,18) [18|32] ""  CDU
+phy:8
+t32080000000000000090
+
+BO_ 801 HVAC_2: 8 HVAC
+ SG_ HVAC_RawCabinTemp : 7|8@0+ (0.5,-40) [-40|87.5] "°C"  CDU
+phy:64
+t3218D000000000000000
+
+ SG_ HVAC_CorrectedCabinTemp : 15|8@0+ (0.5,-40) [-40|87.5] "°C"  CDU
+phy:64
+t321800D0000000000000
+
+ SG_ HVAC_RawCabinTempVD : 19|1@0+ (1,0) [0|1] ""  CDU
+phy:1
+t32180000080000000000
+
+ SG_ HVAC_CompressorComsumpPwr : 17|10@0+ (10,0) [0|8000] "w"  BCM
+phy:4001
+t32180000032000000000
+
+ SG_ HVAC_PTCPwrAct : 33|10@0+ (10,0) [0|8000] "w"  BCM
+phy:4001
+t32180000000003200000
+
+ SG_ HVAC_stPTCAct : 55|3@0+ (1,0) [0|1] ""  BCM
+phy:1
+t32180000000000008000
+
+ SG_ HVAC_CorrectedCabinTempVD : 18|1@0+ (1,0) [0|1] ""  CDU
+phy:1
+t32180000040000000000
+
+BO_ 797 HVAC_3: 8 HVAC
+ SG_ HVAC_ACCfgSt : 0|1@0+ (1,0) [0|1] ""  CDU
+phy:1
+t31D80100000000000000
+
+ SG_ HVAC_AirCirCfgSt : 1|1@0+ (1,0) [0|1] ""  CDU
+phy:1
+t31D80200000000000000
+
+ SG_ HVAC_ComfortCfgSt : 3|2@0+ (1,0) [0|1] ""  CDU
+phy:1
+t31D80800000000000000
+
+BO_ 864 HVAC_4: 8 ACP
+ SG_ HVAC_ACPCommandVD : 0|1@0+ (1,0) [0|1] ""  ACP
+phy:1
+t36080100000000000000
+
+ SG_ HVAC_ACPCommand : 2|2@0+ (1,0) [0|3] ""  ACP
+phy:2
+t36080400000000000000
+
+ SG_ HVAC_ACPSpeedSet : 14|7@0+ (100,0) [0|8600] ""  ACP
+phy:4301
+t36080056000000000000
+
+ SG_ HVAC_ACPHighSidePress : 21|6@0+ (0.5,0) [0|31] ""  ACP
+phy:16
+t36080000200000000000
+
+ SG_ HVAC_PTCPowerRatio : 31|8@0+ (1,0) [0|100] ""  PTC
+phy:51
+t3608000000CC00000000
+
+ SG_ HVAC_Checksum : 39|8@0+ (1,0) [155|255] ""  PTC
+phy:51
+t360800000000CC000000
+
+越下界测试:
+t360800000000004D0000
+
+BO_ 867 ACP_1: 8 ACP
+ SG_ ACP_Speed : 6|7@0+ (100,0) [0|8600] ""  HVAC
+phy:4301
+t36385600000000000000
+
+ SG_ ACPComsumpPwr : 15|10@0+ (10,0) [0|8000] ""  HVAC
+phy:4001
+t363800C8000000000000
+
+ SG_ ACP_Current : 16|9@0+ (0.1,0) [0|51] ""  HVAC
+phy:26
+t36380000010400000000
+
+ SG_ ACP_MotorTemp : 39|8@0+ (1,-40) [-40|140] ""  HVAC
+phy:91
+t36380000000083000000
+
+ SG_ ACP_HearBeat : 55|4@0+ (1,0) [0|15] ""  HVAC
+phy:8
+t36380000000000008000
+
+ SG_ ACP_ExtState : 58|3@0+ (1,0) [0|7] ""  HVAC
+phy:4
+t36380000000000000004
+
+ SG_ ACP_FailGrade : 60|2@0+ (1,0) [0|3] ""  HVAC
+phy:2
+t36380000000000000010
+
+ SG_ ACP_BaseState : 63|3@0+ (1,0) [0|7] ""  HVAC
+phy:4
+t36380000000000000080
+
+BO_ 868 PTC_1: 8 PTC
+ SG_ PTC_ElementError : 7|4@0+ (1,0) [0|15] ""  HVAC
+phy:8
+t36488000000000000000
+
+ SG_ PTC_TemperatureOver : 3|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t36480800000000000000
+
+ SG_ PTC_VoltageFault : 2|1@0+ (1,0) [0|1] ""  HVAC
+phy:1
+t36480400000000000000
+
+ SG_ PTC_InternalError : 1|2@0+ (1,0) [0|3] ""  HVAC
+phy:2
+t36480200000000000000
+
+ SG_ PTC_Current : 15|8@0+ (0.2,0) [0|25.4] "A"  HVAC
+phy:13
+t36480082000000000000
+
+ SG_ PTCPwrAct : 23|10@0+ (10,0) [0|8000] "w"  HVAC
+phy:4001
+t36480000C80000000000
+
+ SG_ PTCActst : 26|3@0+ (1,0) [0|7] ""  HVAC
+phy:4
+t36480000000400000000
+
+BO_ 1541 TP_Dashboard: 6 Dashboard
+ SG_ data : 0|48@1+ (1,0) [0|0] ""  Console
+phy:0
+t6056000000000000
+
+越上界测试:
+t6056000000000080
+
+BO_ 1792 Diag_Request: 8 Vector__XXX
+BO_ 1536 Diag_Response: 8 Vector__XXX
+BO_ 1537 DiagResponse_Motor: 8 Gateway
+ SG_ data : 0|64@1+ (1,0) [0|0] "" Vector__XXX
+phy:0
+t60180000000000000000
+
+越上界测试:
+t60180000000000000080
+
+BO_ 1543 DiagResponse_DoorLeft: 8 DOOR_le
+ SG_ data : 0|64@1+ (1,0) [0|0] "" Vector__XXX
+phy:0
+t60780000000000000000
+
+越上界测试:
+t60780000000000000080
+
+BO_ 1542 DiagRequest: 8 Vector__XXX
+ SG_ data : 0|64@1+ (1,0) [0|0] ""  DOOR_le
+phy:0
+t60680000000000000000
+
+越上界测试:
+t60680000000000000080
+
+BO_ 1540 TP_Console: 6 Console
+ SG_ data : 0|48@1+ (1,0) [0|0] ""  Dashboard
+phy:0
+t6046000000000000
+
+越上界测试:
+t6046000000000080
+
+BO_ 1053 NM_Gateway: 4 Gateway
+ SG_ SleepInd : 12|1@1+ (1,0) [0|0] ""  Gateway,DOOR_ri,DOOR_le
+phy:0
+t41D400000000
+
+越上界测试:
+t41D400100000
+
+BO_ 1052 NM_DOORright: 4 DOOR_ri
+ SG_ SleepInd : 12|1@1+ (1,0) [0|0] ""  Gateway,DOOR_le
+phy:0
+t41C400000000
+
+越上界测试:
+t41C400100000
+
+BO_ 1051 NM_DOORleft: 4 DOOR_le
+ SG_ SleepInd : 12|1@1+ (1,0) [0|0] ""  Gateway,DOOR_ri
+phy:0
+t41B400000000
+
+越上界测试:
+t41B400100000
+
+BO_ 1050 NM_Console: 4 Console
+ SG_ SleepInd : 12|1@1+ (1,0) [0|0] ""  Console,Gateway,DOOR_ri,DOOR_le
+phy:0
+t41A400000000
+
+越上界测试:
+t41A400100000
+
+BO_ 497 DOOR_r: 1 DOOR_ri
+ SG_ WN_Position : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+phy:50
+t1F11C8
+
+越上界测试:
+t1F11CA
+
+BO_ 496 DOOR_l: 1 DOOR_le
+ SG_ WN_Position : 0|8@1+ (1,0) [0|100] "" Vector__XXX
+phy:50
+t1F01C8
+
+越上界测试:
+t1F01CA
+
+BO_ 417 Console_2: 2 Console
+ SG_ Phase : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+phy:0
+t1A120000
+
+越上界测试:
+t1A120001
+
+ SG_ Active : 1|2@1+ (1,0) [0|0] "" Vector__XXX
+phy:0
+t1A120000
+
+越上界测试:
+t1A120400
+
+ SG_ Light : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+phy:0
+t1A120000
+
+BO_ 416 Console_1: 4 Console
+ SG_ WN_right_up : 30|1@1+ (1,0) [0|0] ""  DOOR_ri
+phy:0
+t1A0400000000
+
+越上界测试:
+t1A0400000040
+
+ SG_ WN_right_down : 29|1@1+ (1,0) [0|0] ""  DOOR_ri
+phy:0
+t1A0400000000
+
+越上界测试:
+t1A0400000020
+
+ SG_ WN_left_up : 26|1@1+ (1,0) [0|0] ""  DOOR_le
+phy:0
+t1A0400000000
+
+越上界测试:
+t1A0400000004
+
+ SG_ WN_left_down : 25|1@1+ (1,0) [0|0] ""  DOOR_le
+phy:0
+t1A0400000000
+
+越上界测试:
+t1A0400000002
+
+ SG_ Mirror_r2d : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+phy:0
+t1A0400000000
+
+越上界测试:
+t1A0480000000
+
+ SG_ Mirror_r2u : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+phy:0
+t1A0400000000
+
+越上界测试:
+t1A0440000000
+
+ SG_ Mirror_r2r : 5|1@1+ (1,0) [0|0] "" Vector__XXX
+phy:0
+t1A0400000000
+
+越上界测试:
+t1A0420000000
+
+ SG_ Mirror_r2l : 4|1@1+ (1,0) [0|0] "" Vector__XXX
+phy:0
+t1A0400000000
+
+越上界测试:
+t1A0410000000
+
+ SG_ Mirror_l2d : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+phy:0
+t1A0400000000
+
+越上界测试:
+t1A0408000000
+
+ SG_ Mirror_l2u : 2|1@1+ (1,0) [0|0] "" Vector__XXX
+phy:0
+t1A0400000000
+
+越上界测试:
+t1A0404000000
+
+ SG_ Mirror_l2r : 1|1@1+ (1,0) [0|0] "" Vector__XXX
+phy:0
+t1A0400000000
+
+越上界测试:
+t1A0402000000
+
+ SG_ Mirror_l2l : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+phy:0
+t1A0400000000
+
+越上界测试:
+t1A0401000000
+
+BO_ 273 Gateway_2: 8 Gateway
+ SG_ Voltage : 48|10@1+ (0.1,0) [0|102.3] "V" Vector__XXX
+phy:51
+t1118000000000000FC03
+
+越上界测试:
+t11180000000000000600
+
+ SG_ PetrolLevel : 40|8@1+ (1,0) [0|0] ""  Dashboard
+phy:0
+t11180000000000000000
+
+越上界测试:
+t11180000000000800000
+
+ SG_ EngSpeed : 24|16@1+ (1,0) [0|0] ""  Dashboard
+phy:0
+t11180000000000000000
+
+越上界测试:
+t11180000000080000000
+
+ SG_ CarSpeed : 8|16@1+ (0.5,0) [0|300] ""  Dashboard
+phy:150
+t11180000960000000000
+
+越上界测试:
+t11180080960000000000
+
+ SG_ EngineTemp : 0|8@1+ (1,0) [0|0] ""  Dashboard
+phy:0
+t11180000000000000000
+
+越上界测试:
+t11188000000000000000
+
+BO_ 272 Gateway_1: 3 Gateway
+ SG_ Gear : 8|4@1- (1,0) [0|0] ""  Dashboard
+phy:0
+t1103000000
+
+越上界测试:
+t1103000800
+
+ SG_ EngineRunning : 7|1@1+ (1,0) [0|0] "" Vector__XXX
+phy:0
+t1103000000
+
+越上界测试:
+t1103800000
+
+ SG_ Ig_15 : 2|1@1+ (1,0) [0|0] ""  Dashboard,Console
+phy:0
+t1103000000
+
+越上界测试:
+t1103040000
+
+ SG_ Ig_15R : 1|1@1+ (1,0) [0|0] ""  Dashboard
+phy:0
+t1103000000
+
+越上界测试:
+t1103020000
+
+ SG_ StarterKey : 0|1@1+ (1,0) [0|1] ""  Dashboard
+phy:0
+t1103000000
+
+BO_ 256 DebugMsg1: 8 Vector__XXX
+ SG_ Data4 : 48|16@1- (1,0) [0|0] ""  Gateway
+phy:0
+t10080000000000000000
+
+越上界测试:
+t10080000000000000080
+
+ SG_ Data3 : 32|16@1- (1,0) [0|0] ""  Gateway
+phy:0
+t10080000000000000000
+
+越上界测试:
+t10080000000000800000
+
+ SG_ Data2 : 16|16@1- (1,0) [0|0] ""  Gateway
+phy:0
+t10080000000000000000
+
+越上界测试:
+t10080000008000000000
+
+ SG_ Data1 : 0|16@1- (1,0) [0|0] ""  Gateway
+phy:0
+t10080000000000000000
+
+越上界测试:
+t10080080000000000000
+
+BO_ 512 Diag_Request: 8 Vector__XXX
+BO_ 1024 Diag_Response: 8 Vector__XXX
+BO_ 103 Ignition_Info: 2 Gateway
+ SG_ StarterKey : 0|1@1+ (1,0) [0|1] ""  Engine
+phy:0
+t6720000
+
+BO_ 1544 DiagResponse_Motor: 8 Engine
+BO_ 1537 DiagRequest_Motor: 8 Gateway
+BO_ 1307 NM_Engine: 4 Engine
+ SG_ SleepInd : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+phy:0
+t51B400000000
+
+BO_ 1306 NM_Gateway_PowerTrain: 4 Gateway
+ SG_ SleepInd : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+phy:0
+t51A400000000
+
+BO_ 1020 GearBoxInfo: 1 Engine
+ SG_ EcoMode : 6|2@1+ (1,0) [0|1] "" Vector__XXX
+phy:0
+t3FC100
+
+越上界测试:
+t3FC180
+
+ SG_ ShiftRequest : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+phy:0
+t3FC100
+
+越上界测试:
+t3FC108
+
+ SG_ Gear : 0|3@1+ (1,0) [0|5] ""  Gateway
+phy:2
+t3FC104
+
+越上界测试:
+t3FC106
+
+BO_ 101 EngineStatus: 1 Engine
+ SG_ ErrorCode : 2|6@1+ (1,0) [0|0] "" Vector__XXX
+phy:0
+t65100
+
+越上界测试:
+t65180
+
+ SG_ Status : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+phy:0
+t65100
+
+越上界测试:
+t65102
+
+BO_ 102 EngineDataIEEE: 8 Engine
+ SG_ EngSpeed : 0|32@1- (1,0) [0|8000] "rpm" Vector__XXX
+phy:4000
+t668000000FA00000000
+
+越上界测试:
+t668000008FA00000000
+
+ SG_ EngForce : 32|32@1- (1,0) [0|0] "N" Vector__XXX
+phy:0
+t6680000000000000000
+
+越上界测试:
+t6680000000000000080
+
+BO_ 100 EngineData: 8 Engine
+ SG_ PetrolLevel : 24|8@1+ (1,0) [0|255] "l" Vector__XXX
+phy:127
+t648000000FE00000000
+
+ SG_ EngPower : 48|16@1+ (0.01,0) [0|150] "kW" Vector__XXX
+phy:75
+t64800000000000060EA
+
+越上界测试:
+t648000000000000F0EB
+
+ SG_ EngForce : 32|16@1+ (1,0) [0|0] "N" Vector__XXX
+phy:0
+t6480000000000000000
+
+越上界测试:
+t6480000000000800000
+
+ SG_ IdleRunning : 23|1@1+ (1,0) [0|0] "" Vector__XXX
+phy:0
+t6480000000000000000
+
+越上界测试:
+t6480000800000000000
+
+ SG_ EngTemp : 16|7@1+ (2,-50) [-50|150] "degC" Vector__XXX
+phy:100
+t64800004B0000000000
+
+越上界测试:
+t6480000640000000000
+
+ SG_ EngSpeed : 0|16@1+ (1,0) [0|8000] "rpm" Vector__XXX
+phy:4000
+t64800FA000000000000
+
+越上界测试:
+t64808FA000000000000
+
+BO_ 201 ABSdata: 6 Engine
+ SG_ AccelarationForce : 32|16@1+ (1,-10000) [0|0] "N" Vector__XXX
+phy:0
+tC9600000000409C
+
+越下界测试:
+tC96000000003C9C
+
+越上界测试:
+tC9600000000449C
+
+ SG_ Diagnostics : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+phy:0
+tC96000000000000
+
+越上界测试:
+tC96000080000000
+
+ SG_ GearLock : 15|1@1+ (1,0) [0|0] "" Vector__XXX
+phy:0
+tC96000000000000
+
+越上界测试:
+tC96008000000000
+
+ SG_ CarSpeed : 0|10@1+ (0.5,0) [0|300] "mph" Vector__XXX
+phy:150
+tC96580200000000
+
+越上界测试:
+tC965A0200000000
+
