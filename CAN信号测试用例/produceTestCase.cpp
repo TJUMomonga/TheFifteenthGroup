@@ -262,7 +262,7 @@ string chan10_2(int num,int ord,int le){
     {  
         s=s+(a%2?'1':'0');  
     }
-	if(ord == 0){//order取1，倒着念，order取0，正着念 
+	if(ord == 0){ 
 		reverse(s.begin(),s.end());
 	}
 	if(s=="")
@@ -324,7 +324,7 @@ void zerosort(int * tar,string x, int be,int le){
 	}
 	first = i;
 	int first_len = be - dev[first] + 8 + 1;
-	if(first_len > le)
+	if(first_len > le) //只有一行 
 		first_len = le;
 	int red = le - first_len;
 	
